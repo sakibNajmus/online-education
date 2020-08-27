@@ -1,0 +1,22 @@
+.course-info{
+    /* display: flex;
+    float: left; */
+    margin: 20px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.course-info img{
+    border-radius: 10px;
+}
+
+.course-info button{
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}

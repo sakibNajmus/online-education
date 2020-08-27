@@ -1,0 +1,31 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu-bar a{    
+    margin: 0 0 0 30px;
+    text-decoration: none;
+    color: white;
+    line-height: 80px;
+    padding: 30px;
+    font-weight: 700;
+}
+
+.menu-bar a:hover{
+    background-color: white;
+    color: black;
+}
+
+.shopping-cart{    
+    margin: 0 75px 0 0;
+    color: white;
+    line-height: 80px;
+    font-weight: 700;
+}
