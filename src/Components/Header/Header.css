@@ -4,8 +4,6 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    max-width: 100%;
-    background-size: cover;
 }
 
 .logo{
@@ -15,8 +13,8 @@
     margin: 0 20px;
 }
 
-.menu-bar a{    
-    margin: 0 0 0 30px;
+.menu-bar a{
+    margin-right: 10px;
     text-decoration: none;
     color: white;
     line-height: 80px;
