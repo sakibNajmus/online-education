@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { Navbar, Nav, Row, Container, Col } from 'react-bootstrap';
 
 const Header = (props) => {
     const cart = props.cart;
@@ -14,17 +15,26 @@ const Header = (props) => {
     }
 
     return (
-        <div className="header">
-            <div className="menu-bar">                
-                <a href="/Home">Home</a>
-                <a href="../Course">Courses</a>
-                <a href="/Contact">Contact</a>
-            </div>
-
-            <div className="shopping-cart">
-                <span><FontAwesomeIcon icon={faShoppingCart} /> {cart.length} | ${total.toFixed(2)}</span>
-            </div>
-        </div>
+                <Container>
+                    <Row>
+                        <Col>
+                        <Navbar bg="light" expand="lg" className="header">                            
+                            <Navbar.Brand className="logo" href="#home">Online Education</Navbar.Brand>
+                                <div className="shopping-cart">
+                                    <span><FontAwesomeIcon icon={faShoppingCart} /> {cart.length} | ${total.toFixed(2)}</span>
+                                </div>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="menu-bar ml-auto">
+                                <Nav.Link href="#home">Home</Nav.Link>
+                                <Nav.Link href="#link">About</Nav.Link>
+                                <Nav.Link href="#link">Contact</Nav.Link>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Navbar>
+                        </Col>
+                    </Row>
+                </Container>
     );
 };
 
